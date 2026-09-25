@@ -1,0 +1,696 @@
+{
+  "state": {
+    "userId": "u-1790360304940",
+    "users": [
+      {
+        "id": "u-1790360304940",
+        "name": "teja",
+        "email": "tejagundarapu16@gmail.com",
+        "roles": [
+          "donor"
+        ],
+        "location": "vizianagaram",
+        "coords": {
+          "lat": 30.2672,
+          "lng": -97.7431
+        },
+        "emailVerified": true,
+        "createdAt": 1790360304940
+      },
+      {
+        "id": "u-9027",
+        "name": "Dullasaicharan2612",
+        "email": "dullasaicharan2612@gmail.com",
+        "emailVerified": true,
+        "phoneVerified": false,
+        "roles": [
+          "donor"
+        ],
+        "location": "Unspecified location",
+        "coords": {
+          "lat": 30.2672,
+          "lng": -97.7431
+        },
+        "createdAt": 1790343015144
+      },
+      {
+        "id": "u-9025",
+        "name": "V",
+        "email": "vivekarrisetti@gmail.com",
+        "emailVerified": true,
+        "phoneVerified": false,
+        "roles": [
+          "donor"
+        ],
+        "location": "vzm",
+        "coords": {
+          "lat": 30.2672,
+          "lng": -97.7431
+        },
+        "createdAt": 1786481439940
+      },
+      {
+        "id": "u-9022",
+        "name": "V",
+        "email": "vivekarrisetti35@gmail.com",
+        "emailVerified": true,
+        "phoneVerified": false,
+        "roles": [
+          "donor"
+        ],
+        "location": "vzm",
+        "coords": {
+          "lat": 30.2672,
+          "lng": -97.7431
+        },
+        "createdAt": 1786481383632
+      },
+      {
+        "id": "u-9002",
+        "name": "Jjnikhil113",
+        "email": "jjnikhil113@gmailcom",
+        "emailVerified": false,
+        "phoneVerified": false,
+        "roles": [
+          "volunteer"
+        ],
+        "location": "Unspecified location",
+        "coords": {
+          "lat": 30.2672,
+          "lng": -97.7431
+        },
+        "createdAt": 1786477219446
+      },
+      {
+        "id": "u-9000",
+        "name": "Sai",
+        "email": "jjnikhil113@gmail.com",
+        "emailVerified": true,
+        "phoneVerified": false,
+        "roles": [
+          "donor",
+          "volunteer",
+          "recipient",
+          "logistics"
+        ],
+        "location": "vzm",
+        "coords": {
+          "lat": 30.2672,
+          "lng": -97.7431
+        },
+        "createdAt": 1786477148251
+      },
+      {
+        "id": "u-admin",
+        "name": "Amara Okafor",
+        "email": "admin@essentialaid.org",
+        "phone": "+1-512-555-0101",
+        "emailVerified": true,
+        "phoneVerified": true,
+        "roles": [
+          "admin"
+        ],
+        "location": "Central Relief HQ, Austin TX",
+        "coords": {
+          "lat": 30.2672,
+          "lng": -97.7431
+        },
+        "password": "$2b$10$LGY2i5cMTrooK5SIO41h9uAa.hSVrmBeCq64e4rEHR6ufTk4qy9wC"
+      },
+      {
+        "id": "u-donor",
+        "name": "Daniel Reyes",
+        "email": "donor@essentialaid.org",
+        "phone": "+1-512-555-0102",
+        "emailVerified": true,
+        "phoneVerified": true,
+        "roles": [
+          "donor"
+        ],
+        "location": "North Austin, TX",
+        "coords": {
+          "lat": 30.4,
+          "lng": -97.72
+        },
+        "password": "$2b$10$LGY2i5cMTrooK5SIO41h9uAa.hSVrmBeCq64e4rEHR6ufTk4qy9wC"
+      },
+      {
+        "id": "u-recipient",
+        "name": "Fatima Hassan",
+        "email": "recipient@essentialaid.org",
+        "phone": "+1-512-555-0103",
+        "emailVerified": true,
+        "phoneVerified": true,
+        "roles": [
+          "recipient"
+        ],
+        "location": "East Austin, TX",
+        "coords": {
+          "lat": 30.26,
+          "lng": -97.68
+        },
+        "password": "$2b$10$LGY2i5cMTrooK5SIO41h9uAa.hSVrmBeCq64e4rEHR6ufTk4qy9wC"
+      },
+      {
+        "id": "u-logistics",
+        "name": "Leo Martins",
+        "email": "logistics@essentialaid.org",
+        "phone": "+1-512-555-0104",
+        "emailVerified": true,
+        "phoneVerified": true,
+        "roles": [
+          "logistics"
+        ],
+        "location": "Dispatch Center, Austin TX",
+        "coords": {
+          "lat": 30.29,
+          "lng": -97.75
+        },
+        "password": "$2b$10$LGY2i5cMTrooK5SIO41h9uAa.hSVrmBeCq64e4rEHR6ufTk4qy9wC"
+      }
+    ],
+    "verificationChallenges": [
+      {
+        "id": "vc-9038",
+        "userId": "u-9022",
+        "method": "email",
+        "identifier": "vivekarrisetti35@gmail.com",
+        "role": "donor",
+        "code": "719458",
+        "expiresAt": 1790345574654,
+        "createdAt": 1790344974654,
+        "purpose": "login"
+      },
+      {
+        "id": "vc-9036",
+        "userId": "u-9025",
+        "method": "email",
+        "identifier": "vivekarrisetti@gmail.com",
+        "role": "donor",
+        "code": "631303",
+        "expiresAt": 1790345489448,
+        "createdAt": 1790344889448,
+        "purpose": "login"
+      },
+      {
+        "id": "vc-9030",
+        "userId": "u-9027",
+        "method": "email",
+        "identifier": "dullasaicharan2612@gmail.com",
+        "role": "donor",
+        "code": "533868",
+        "expiresAt": 1790343673354,
+        "createdAt": 1790343073354,
+        "purpose": "login"
+      },
+      {
+        "id": "vc-9021",
+        "userId": "u-9000",
+        "method": "email",
+        "identifier": "jjnikhil113@gmail.com",
+        "role": "volunteer",
+        "code": "550322",
+        "expiresAt": 1786479615663,
+        "createdAt": 1786479015663,
+        "purpose": "login"
+      },
+      {
+        "id": "vc-9005",
+        "userId": "u-9002",
+        "method": "email",
+        "identifier": "jjnikhil113@gmailcom",
+        "role": "volunteer",
+        "code": "347856",
+        "expiresAt": 1786477854274,
+        "createdAt": 1786477254274,
+        "purpose": "signup"
+      }
+    ],
+    "donations": [
+      {
+        "id": "d-9017",
+        "donorId": "u-9000",
+        "donorName": "Sai",
+        "category": "Food & Water",
+        "title": "food",
+        "quantity": 1,
+        "condition": "New",
+        "pickupLocation": "vzm",
+        "coords": {
+          "lat": 30.2672,
+          "lng": -97.7431
+        },
+        "status": "Verified",
+        "verified": true,
+        "autoVerified": true,
+        "createdAt": 1786478538146,
+        "history": [
+          {
+            "status": "Listed",
+            "at": 1786478538146
+          },
+          {
+            "status": "Verified",
+            "at": 1786478538147,
+            "note": "Auto-verified"
+          }
+        ]
+      },
+      {
+        "id": "d-1001",
+        "donorId": "u-donor",
+        "donorName": "Daniel Reyes",
+        "category": "Food & Water",
+        "title": "Bottled water (24-pack cases)",
+        "quantity": 40,
+        "condition": "New",
+        "pickupLocation": "North Austin, TX",
+        "coords": {
+          "lat": 30.4,
+          "lng": -97.72
+        },
+        "status": "In-transit",
+        "verified": true,
+        "autoVerified": true,
+        "driveId": "drive-flood",
+        "matchedRequestId": "r-2001",
+        "matchConfidence": 92,
+        "pickupMethod": "Volunteer delivery",
+        "deliveryWindow": "Today, 2:00 PM - 4:00 PM",
+        "createdAt": 1786217239726,
+        "history": [
+          {
+            "status": "Listed",
+            "at": 1786217239726
+          },
+          {
+            "status": "Verified",
+            "at": 1786224439726,
+            "note": "Auto-verified"
+          },
+          {
+            "status": "Matched",
+            "at": 1786303639726,
+            "note": "Matched to critical request"
+          },
+          {
+            "status": "Picked-up",
+            "at": 1786454839726
+          },
+          {
+            "status": "In-transit",
+            "at": 1786469239726
+          }
+        ]
+      },
+      {
+        "id": "d-1002",
+        "donorId": "u-donor",
+        "donorName": "Daniel Reyes",
+        "category": "Clothing",
+        "title": "Winter jackets, assorted sizes",
+        "quantity": 25,
+        "condition": "Good",
+        "pickupLocation": "North Austin, TX",
+        "coords": {
+          "lat": 30.4,
+          "lng": -97.72
+        },
+        "status": "Listed",
+        "verified": false,
+        "autoVerified": false,
+        "createdAt": 1786454839726,
+        "history": [
+          {
+            "status": "Listed",
+            "at": 1786454839726
+          }
+        ]
+      },
+      {
+        "id": "d-1003",
+        "donorId": "u-2",
+        "donorName": "Priya Nair",
+        "category": "Medical Supplies",
+        "title": "First-aid kits, sealed",
+        "quantity": 15,
+        "condition": "New",
+        "pickupLocation": "South Austin, TX",
+        "coords": {
+          "lat": 30.2,
+          "lng": -97.78
+        },
+        "status": "Verified",
+        "verified": true,
+        "autoVerified": false,
+        "driveId": "drive-flood",
+        "createdAt": 1786390039726,
+        "history": [
+          {
+            "status": "Listed",
+            "at": 1786390039726
+          },
+          {
+            "status": "Verified",
+            "at": 1786404439726,
+            "note": "Admin verified after photo review"
+          }
+        ]
+      },
+      {
+        "id": "d-1004",
+        "donorId": "u-3",
+        "donorName": "Marcus Bell",
+        "category": "Shelter & Bedding",
+        "title": "Emergency blankets & sleeping bags",
+        "quantity": 60,
+        "condition": "New",
+        "pickupLocation": "Round Rock, TX",
+        "coords": {
+          "lat": 30.51,
+          "lng": -97.68
+        },
+        "status": "Delivered",
+        "verified": true,
+        "autoVerified": true,
+        "driveId": "drive-flood",
+        "matchedRequestId": "r-2003",
+        "matchConfidence": 88,
+        "pickupMethod": "Third-party courier",
+        "deliveryWindow": "Yesterday, 10:00 AM - 12:00 PM",
+        "createdAt": 1786130839726,
+        "history": [
+          {
+            "status": "Listed",
+            "at": 1786130839726
+          },
+          {
+            "status": "Verified",
+            "at": 1786134439726
+          },
+          {
+            "status": "Matched",
+            "at": 1786217239726
+          },
+          {
+            "status": "Picked-up",
+            "at": 1786303639726
+          },
+          {
+            "status": "In-transit",
+            "at": 1786368439726
+          },
+          {
+            "status": "Delivered",
+            "at": 1786382839726
+          }
+        ]
+      },
+      {
+        "id": "d-1005",
+        "donorId": "u-4",
+        "donorName": "Sofia Lin",
+        "category": "Baby & Child",
+        "title": "Diapers, formula & baby wipes",
+        "quantity": 30,
+        "condition": "New",
+        "pickupLocation": "Cedar Park, TX",
+        "coords": {
+          "lat": 30.5,
+          "lng": -97.82
+        },
+        "status": "Matched",
+        "verified": true,
+        "autoVerified": true,
+        "matchedRequestId": "r-2002",
+        "matchConfidence": 76,
+        "createdAt": 1786303639726,
+        "history": [
+          {
+            "status": "Listed",
+            "at": 1786303639726
+          },
+          {
+            "status": "Verified",
+            "at": 1786307239726
+          },
+          {
+            "status": "Matched",
+            "at": 1786447639726
+          }
+        ]
+      },
+      {
+        "id": "d-1006",
+        "donorId": "u-5",
+        "donorName": "Grace Kim",
+        "category": "Hygiene",
+        "title": "Hygiene kits (soap, toothpaste, towels)",
+        "quantity": 50,
+        "condition": "New",
+        "pickupLocation": "Pflugerville, TX",
+        "coords": {
+          "lat": 30.44,
+          "lng": -97.62
+        },
+        "status": "Reviewed",
+        "verified": true,
+        "autoVerified": true,
+        "matchedRequestId": "r-2004",
+        "matchConfidence": 81,
+        "pickupMethod": "Self-pickup",
+        "deliveryWindow": "2 days ago",
+        "createdAt": 1785958039726,
+        "rating": 5,
+        "feedback": "Arrived quickly and everything was in perfect condition. Thank you!",
+        "history": [
+          {
+            "status": "Listed",
+            "at": 1785958039726
+          },
+          {
+            "status": "Verified",
+            "at": 1785961639726
+          },
+          {
+            "status": "Matched",
+            "at": 1786044439726
+          },
+          {
+            "status": "Picked-up",
+            "at": 1786130839726
+          },
+          {
+            "status": "In-transit",
+            "at": 1786217239726
+          },
+          {
+            "status": "Delivered",
+            "at": 1786303639726
+          },
+          {
+            "status": "Reviewed",
+            "at": 1786390039726,
+            "note": "5-star review left"
+          }
+        ]
+      }
+    ],
+    "requests": [
+      {
+        "id": "r-9014",
+        "recipientId": "u-9000",
+        "recipientName": "Sai",
+        "category": "Food & Water",
+        "quantity": 1,
+        "urgency": "Normal",
+        "deliveryAddress": "vzm",
+        "coords": {
+          "lat": 30.2672,
+          "lng": -97.7431
+        },
+        "status": "Open",
+        "createdAt": 1786478227213
+      },
+      {
+        "id": "r-2001",
+        "recipientId": "u-recipient",
+        "recipientName": "Fatima Hassan",
+        "category": "Food & Water",
+        "quantity": 30,
+        "urgency": "Critical",
+        "deliveryAddress": "East Austin, TX",
+        "coords": {
+          "lat": 30.26,
+          "lng": -97.68
+        },
+        "status": "Matched",
+        "matchedDonationId": "d-1001",
+        "driveId": "drive-flood",
+        "createdAt": 1786303639726
+      },
+      {
+        "id": "r-2002",
+        "recipientId": "u-recipient",
+        "recipientName": "Fatima Hassan",
+        "category": "Baby & Child",
+        "quantity": 20,
+        "urgency": "High",
+        "deliveryAddress": "East Austin, TX",
+        "coords": {
+          "lat": 30.26,
+          "lng": -97.68
+        },
+        "status": "Matched",
+        "matchedDonationId": "d-1005",
+        "createdAt": 1786444039726
+      },
+      {
+        "id": "r-2003",
+        "recipientId": "u-6",
+        "recipientName": "Omar Said",
+        "category": "Shelter & Bedding",
+        "quantity": 40,
+        "urgency": "Critical",
+        "deliveryAddress": "Kerrville, TX",
+        "coords": {
+          "lat": 30.05,
+          "lng": -99.14
+        },
+        "status": "Delivered",
+        "matchedDonationId": "d-1004",
+        "driveId": "drive-flood",
+        "createdAt": 1786217239726
+      },
+      {
+        "id": "r-2004",
+        "recipientId": "u-7",
+        "recipientName": "Elena Volkov",
+        "category": "Hygiene",
+        "quantity": 35,
+        "urgency": "Normal",
+        "deliveryAddress": "Georgetown, TX",
+        "coords": {
+          "lat": 30.63,
+          "lng": -97.68
+        },
+        "status": "Reviewed",
+        "matchedDonationId": "d-1006",
+        "createdAt": 1785958039726,
+        "rating": 5,
+        "feedback": "Incredibly grateful for the quick help."
+      },
+      {
+        "id": "r-2005",
+        "recipientId": "u-8",
+        "recipientName": "James Carter",
+        "category": "Medical Supplies",
+        "quantity": 12,
+        "urgency": "Critical",
+        "deliveryAddress": "South Austin, TX",
+        "coords": {
+          "lat": 30.21,
+          "lng": -97.79
+        },
+        "status": "Open",
+        "driveId": "drive-flood",
+        "createdAt": 1786462039726
+      },
+      {
+        "id": "r-2006",
+        "recipientId": "u-9",
+        "recipientName": "Nadia Petrov",
+        "category": "Clothing",
+        "quantity": 20,
+        "urgency": "High",
+        "deliveryAddress": "North Austin, TX",
+        "coords": {
+          "lat": 30.41,
+          "lng": -97.71
+        },
+        "status": "Open",
+        "createdAt": 1786451239726
+      }
+    ],
+    "drives": [
+      {
+        "id": "drive-flood",
+        "title": "Hill Country Flood Relief",
+        "description": "Flash flooding has displaced hundreds of families. Urgent need for clean water, bedding, and medical supplies.",
+        "location": "Kerr County, TX",
+        "categories": [
+          "Food & Water",
+          "Shelter & Bedding",
+          "Medical Supplies"
+        ],
+        "active": true,
+        "createdAt": 1786303639726,
+        "goal": 500
+      },
+      {
+        "id": "drive-heat",
+        "title": "Summer Heat Emergency",
+        "description": "Record temperatures. Collecting fans, electrolytes, and water for vulnerable residents.",
+        "location": "Travis County, TX",
+        "categories": [
+          "Food & Water",
+          "Electronics",
+          "Medical Supplies"
+        ],
+        "active": true,
+        "createdAt": 1786044439726,
+        "goal": 300
+      }
+    ],
+    "notifications": [
+      {
+        "title": "Donation listed",
+        "message": "\"food\" was auto-verified and is ready to match.",
+        "type": "status",
+        "urgent": false,
+        "id": "n-9018",
+        "createdAt": 1786478538146,
+        "read": false
+      },
+      {
+        "title": "Request submitted",
+        "message": "We're searching for matching donations now.",
+        "type": "info",
+        "urgent": false,
+        "id": "n-9015",
+        "createdAt": 1786478227213,
+        "read": false
+      },
+      {
+        "id": "n-1",
+        "title": "Donation in transit",
+        "message": "Your bottled water donation is on the way to Fatima H. (Critical request).",
+        "type": "status",
+        "urgent": true,
+        "read": false,
+        "createdAt": 1786469239726,
+        "role": "donor"
+      },
+      {
+        "id": "n-2",
+        "title": "New emergency drive",
+        "message": "Hill Country Flood Relief is now active. Urgent need for water and bedding.",
+        "type": "drive",
+        "urgent": true,
+        "read": false,
+        "createdAt": 1786303639726
+      },
+      {
+        "id": "n-3",
+        "title": "Match confirmed",
+        "message": "First-aid kits from Priya N. matched to a critical medical request.",
+        "type": "match",
+        "urgent": false,
+        "read": true,
+        "createdAt": 1786404439726,
+        "role": "admin"
+      }
+    ]
+  },
+  "idCounter": 9039
+}
