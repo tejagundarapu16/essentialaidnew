@@ -75,7 +75,10 @@ export async function POST(request: Request) {
     store.state.userId = newUser.id
     await writeStore(store)
 
-    const { password: _, resetToken: __, resetTokenExpires: ___, ...safeUser } = newUser
+    const safeUser: Partial<User> = { ...newUser }
+    delete safeUser.password
+    delete safeUser.resetToken
+    delete safeUser.resetTokenExpires
 
     return NextResponse.json(
       {

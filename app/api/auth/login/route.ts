@@ -62,8 +62,10 @@ export async function POST(request: Request) {
 
     await writeStore(store)
 
-    // Return safe user object (omit password & reset token)
-    const { password: _, resetToken: __, resetTokenExpires: ___, ...safeUser } = user
+    const safeUser: Partial<User> = { ...user }
+    delete safeUser.password
+    delete safeUser.resetToken
+    delete safeUser.resetTokenExpires
 
     return NextResponse.json(
       {
