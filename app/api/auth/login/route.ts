@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server"
 import bcrypt from "bcryptjs"
 import { readStore, writeStore } from "@/lib/backend-store"
+import { connectToDatabase } from "@/lib/mongodb"
+import { UserModel } from "@/lib/models"
 import type { Role, User } from "@/lib/types"
 
 export const runtime = "nodejs"
@@ -33,10 +35,39 @@ export async function POST(request: Request) {
       )
     }
 
+    let user: User | null = null
+
+    // Query MongoDB first if connected
+    try {
+      const mongooseInstance = await connectToDatabase()
+      if (mongooseInstance) {
+        const dbUser = await UserModel.findOne({ email: trimmedEmail })
+        if (dbUser) {
+          user = {
+            id: dbUser.id || dbUser._id.toString(),
+            name: dbUser.name,
+            email: dbUser.email,
+            phone: dbUser.phone,
+            password: dbUser.password,
+            roles: dbUser.roles as Role[],
+            location: dbUser.location,
+            coords: dbUser.coords,
+            emailVerified: dbUser.emailVerified,
+            phoneVerified: dbUser.phoneVerified,
+            createdAt: dbUser.createdAt,
+          }
+        }
+      }
+    } catch (dbErr) {
+      console.warn("[Login Route] MongoDB query skipped or error:", dbErr)
+    }
+
     const store = await readStore()
-    const user = store.state.users.find(
-      (u) => u.email && u.email.trim().toLowerCase() === trimmedEmail,
-    )
+    if (!user) {
+      user = store.state.users.find(
+        (u) => u.email && u.email.trim().toLowerCase() === trimmedEmail,
+      ) ?? null
+    }
 
     if (!user || !user.password) {
       return NextResponse.json(
@@ -58,8 +89,29 @@ export async function POST(request: Request) {
       user.roles.push(role)
     }
     user.emailVerified = true
-    store.state.userId = user.id
 
+    // Update MongoDB if connected
+    try {
+      const mongooseInstance = await connectToDatabase()
+      if (mongooseInstance) {
+        await UserModel.updateOne(
+          { email: trimmedEmail },
+          { $set: { roles: user.roles, emailVerified: true } },
+        )
+      }
+    } catch (dbErr) {
+      console.warn("[Login Route] Could not update MongoDB user state:", dbErr)
+    }
+
+    // Sync in store
+    const storeUser = store.state.users.find((u) => u.id === user!.id)
+    if (storeUser) {
+      storeUser.roles = user.roles
+      storeUser.emailVerified = true
+    } else {
+      store.state.users.unshift(user)
+    }
+    store.state.userId = user.id
     await writeStore(store)
 
     const safeUser: Partial<User> = { ...user }
@@ -83,3 +135,4 @@ export async function POST(request: Request) {
     )
   }
 }
+

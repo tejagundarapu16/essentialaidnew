@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server"
 import bcrypt from "bcryptjs"
 import { readStore, writeStore } from "@/lib/backend-store"
+import { connectToDatabase } from "@/lib/mongodb"
+import { UserModel } from "@/lib/models"
 import type { Role, User } from "@/lib/types"
 
 export const runtime = "nodejs"
@@ -46,12 +48,26 @@ export async function POST(request: Request) {
       )
     }
 
+    // Check MongoDB first if connected
+    let existingInDb = false
+    try {
+      const mongooseInstance = await connectToDatabase()
+      if (mongooseInstance) {
+        const foundInDb = await UserModel.findOne({ email: trimmedEmail })
+        if (foundInDb) {
+          existingInDb = true
+        }
+      }
+    } catch (dbErr) {
+      console.warn("[Register Route] MongoDB lookup skipped or error:", dbErr)
+    }
+
     const store = await readStore()
-    const existing = store.state.users.find(
+    const existingInStore = store.state.users.find(
       (u) => u.email && u.email.trim().toLowerCase() === trimmedEmail,
     )
 
-    if (existing) {
+    if (existingInDb || existingInStore) {
       return NextResponse.json(
         { success: false, message: "An account with this email address already exists." },
         { status: 400 },
@@ -69,6 +85,16 @@ export async function POST(request: Request) {
       coords: { lat: 30.2672, lng: -97.7431 },
       emailVerified: true,
       createdAt: Date.now(),
+    }
+
+    // Save to MongoDB if connected
+    try {
+      const mongooseInstance = await connectToDatabase()
+      if (mongooseInstance) {
+        await UserModel.create(newUser)
+      }
+    } catch (dbErr) {
+      console.warn("[Register Route] Could not save to MongoDB:", dbErr)
     }
 
     store.state.users.unshift(newUser)
@@ -96,3 +122,4 @@ export async function POST(request: Request) {
     )
   }
 }
+

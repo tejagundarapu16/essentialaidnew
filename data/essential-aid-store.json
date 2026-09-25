@@ -1,7 +1,23 @@
 {
   "state": {
-    "userId": "u-1790363290383",
+    "userId": "u-1790366192023",
     "users": [
+      {
+        "id": "u-1790366192023",
+        "name": "teja",
+        "email": "tejagundarapu@gmail.com",
+        "roles": [
+          "recipient"
+        ],
+        "location": "Central Relief Area",
+        "coords": {
+          "lat": 30.2672,
+          "lng": -97.7431
+        },
+        "emailVerified": true,
+        "createdAt": 1790366192024,
+        "password": "$2b$10$1nW2JiJGJcTXhs8wUf/rUuuGMPFh1inAS15uNUR1qdwz.FzNaFk26"
+      },
       {
         "id": "u-1790363290383",
         "name": "teja",
