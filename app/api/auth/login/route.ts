@@ -26,7 +26,7 @@ export async function POST(request: Request) {
       )
     }
 
-    if (!password || !password.trim()) {
+    if (!password) {
       return NextResponse.json(
         { success: false, message: "Password is required." },
         { status: 400 },

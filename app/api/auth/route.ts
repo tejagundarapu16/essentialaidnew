@@ -4,5 +4,5 @@ export const runtime = "nodejs"
 export const dynamic = "force-dynamic"
 
 export async function GET() {
-  return NextResponse.json({ status: "OTP Auth Service active" })
+  return NextResponse.json({ status: "Auth Service active" })
 }
