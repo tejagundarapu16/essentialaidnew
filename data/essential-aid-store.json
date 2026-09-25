@@ -1,7 +1,23 @@
 {
   "state": {
-    "userId": "u-1790366192023",
+    "userId": "u-1790367366214",
     "users": [
+      {
+        "id": "u-1790367366214",
+        "name": "teju",
+        "email": "tejagundarapu12@gmail.com",
+        "roles": [
+          "donor"
+        ],
+        "location": "vizag",
+        "coords": {
+          "lat": 30.2672,
+          "lng": -97.7431
+        },
+        "emailVerified": true,
+        "createdAt": 1790367366214,
+        "password": "$2b$10$upJnfo/JrKZZuumW7qnDXeraeKSX35bPOtY5DX3ORM8u7n5.Nn7oa"
+      },
       {
         "id": "u-1790366742708",
         "name": "nikhil",
