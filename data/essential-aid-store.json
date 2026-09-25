@@ -3,11 +3,27 @@
     "userId": "u-1790366192023",
     "users": [
       {
+        "id": "u-1790366742708",
+        "name": "nikhil",
+        "email": "nikhilkatre@gmail.com",
+        "roles": [
+          "donor"
+        ],
+        "location": "vzm",
+        "coords": {
+          "lat": 30.2672,
+          "lng": -97.7431
+        },
+        "emailVerified": true,
+        "createdAt": 1790366742708
+      },
+      {
         "id": "u-1790366192023",
         "name": "teja",
         "email": "tejagundarapu@gmail.com",
         "roles": [
-          "recipient"
+          "recipient",
+          "donor"
         ],
         "location": "Central Relief Area",
         "coords": {
